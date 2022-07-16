@@ -4,9 +4,113 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test portfolio</title>
+    <link rel="stylesheet" href="GridvStack.css" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <title>Document</title>
 </head>
 <body>
-    
+    <div class="wrapper">
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Store</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+
+            <ul class="social">
+                <li><a href="" class="fb">Facebook</a></li>
+                <li><a href="" class="tw">Twitter</a></li>
+            </ul>
+        </nav>
+        <div style="margin: 20px">
+            <span>Layout:</span>
+            <a href="#" class="stack">Stack</a>
+            <a href="#" class="grid">Grid</a>
+        </div>
+        <section id="blocks">
+              <article>
+                <h2>Inquiry begins into Captain Tom Foundation charity</h2>
+                <p>An inquiry has been launched into the charity set up in honour of fundraiser and Army veteran Capt Sir Tom Moore.
+                    The Charity Commission has concerns about The Captain Tom Foundation's management and decisions that could 
+                    have generated "significant profit" for a company run by his family.</p>
+              </article>  
+              <article>
+                <h2>Heathrow Airport announces more flight cancellations</h2>
+                <p>Heathrow Airport has asked airlines to remove 30 flights from Thursday morning's schedule because it is expecting more 
+                    passenger numbers than it can currently cope with.In total, 1,200 flights were scheduled to leave throughout the day.
+
+                    The airport claims the cancellations are necessary for both safety and to ensure as many passengers as possible catch their flights.
+                    
+                    It said individual airlines would contact people who are affected. Thousands of aviation jobs were lost during the pandemic and many businesses have struggled to recruit enough new staff in time to deal with resurgent 
+                    demand for travel following the easing of Covid rules.</p>
+              </article>
+              <article>
+                <h2>Farmers cut food production as costs soar</h2>
+                <p>Farmers struggling with soaring costs are being forced to cut back on their food production, according to the National Farmers' Union (NFU).
+
+                    It said some are at risk of going out of business. One farmer told the BBC the food system in the UK is "broken".
+                    
+                    A third of arable farmers told the NFU they're cutting back on crops for food.
+                    
+                    Many are switching from growing wheat for bread to wheat for animal feed, as it uses less fertiliser. The government said its schemes supported farmers.
+                    
+                    Fuel, animal feed, fertiliser and energy have all seen unprecedented price rises in recent months, in part due to Russia's invasion of Ukraine, putting financial pressure on farmers who cannot always pass those costs on to supermarkets and other customers.</p>
+              </article>
+              <article>
+                <h2>Ukraine War: UK pledges an extra £1bn in military support</h2>
+                <p>The UK will provide an additional £1bn in military aid for Ukraine, a near-doubling in its support for the fight against the Russian invasion.
+
+                    The new funding takes the military aid given to Kyiv to £2.3bn - and the UK has also spent £1.5bn in humanitarian and economic support for Ukraine.
+                    
+                    Boris Johnson said British spending was "transforming Ukraine's defences".
+                    
+                    The pledge came after President Zelensky urged Nato leaders to do more to help Ukraine's war effort.
+                    
+                    Mr Zelensky told Nato leaders the monthly cost of defence for Ukraine was around $5bn (£4.12bn).
+                    
+                    The UK is second only to the US in terms of military aid for Ukraine - the US recently approved a $40bn (£33bn) package of support.</p>
+              </article>
+              <article>
+                <h2>Paris trial: Salah Abdeslam guilty as historic trial ends</h2>
+                <p>The only surviving attacker from the group that carried out the November 2015 Paris attacks has been found guilty of terrorism and murder charges.
+
+                    Salah Abdeslam received a rare full-life sentence for his role in the gun and bomb attacks that killed 130 people.
+                    
+                    The court also convicted 19 other men involved, six of whom are believed to be dead.
+                    
+                    The trial - the biggest in modern French history - began last September.
+                    
+                    For more than nine months, victims, journalists, and the families of the dead lined up outside the specially-built courtroom in Paris to piece together the story of the worst attack in France since World War Two.
+                    
+                    The attacks across bars, restaurants, the national football stadium and Bataclan music venue on 13 November 2015 saw hundreds injured alongside those killed.</p>
+              </article>
+              <article>
+                <h2>Nearly a quarter of Earth's seafloor now mapped</h2>
+                <p>Slowly but surely the proportion of the global ocean floor that's been properly mapped is rising.
+
+                    It's now up to just shy of a quarter of the total area under water - at 23.4%.
+                    
+                    Better seafloor maps help us with navigation and conservation, among many other uses.
+                    
+                    Some 10 million sq km (3.8 million sq miles) of new bathymetric (depth) data was added in the past year. This is an area broadly equivalent to the land surface of Europe.
+                    
+                    The update was given at the second UN Ocean Conference, taking place this week in Lisbon, Portugal.
+                    Much of this additional data comes not from recent mapping efforts, however, but simply as a result of governments, institutions and companies agreeing to open up their archives.
+
+                    It's thought a further 10-15% is still squirrelled away on servers, in part because the owners worry they might be giving away commercial or defence secrets if they release the information.
+                    
+                    "But they really needn't worry," said Jamie McMichael-Phillips, director of Seabed 2030, the organisation that is trying to corral world efforts to obtain a complete picture of Earth's ocean bottom.</p>
+              </article>
+            </section>
+    </div>
+    <script>
+        $("a.stack").on("click", function(){
+            $("article").addClass("stack");
+        });
+        $("a.grid").on("click", function(){
+            $("article").removeClass("stack");
+        });
+    </script>
 </body>
 </html>
